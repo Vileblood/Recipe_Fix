@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-var logoElement = $('footer .logo');
 
-$(window).scroll(function() {
-  
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-     
-       $(logoElement).addClass('show');
-     
-   } else if($(logoElement).hasClass('show') && $(window).scrollTop() + $(window).height() > $(document).height() - 150) {
-     
-      $(logoElement).removeClass('show');
-     
-   }
-});
-=======
 const { MongoClient } = require("mongodb");
 
 async function main(){
@@ -21,7 +6,7 @@ async function main(){
 
 
   const uri =
-  "db connection string goes here";
+  "mongodb+srv://dthomas1986:r00tuser86@firstcluster.pf6q6.mongodb.net/new_recipe_set?retryWrites=true&w=majority";
   
 
   const client = new MongoClient(uri);
@@ -66,4 +51,4 @@ async function listDatabases(client) {
   console.log("Databases:");
   databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 };
->>>>>>> 802fa4ef3e9cbfb34a670ec786b4fec6141c3512
+

@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap');
+
 html { 
-<<<<<<< HEAD
-    background: url(img/recipe-front.jpg) no-repeat center center fixed; 
-=======
     background: url(img/new-background.jpg) no-repeat center center fixed; 
->>>>>>> 802fa4ef3e9cbfb34a670ec786b4fec6141c3512
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-<<<<<<< HEAD
     position: relative;
-=======
 
->>>>>>> 802fa4ef3e9cbfb34a670ec786b4fec6141c3512
     }
 .bg-light{
     background-color: transparent;
@@ -32,10 +26,7 @@ html {
 .navbar-nav{
     font-family: 'David Libre', serif;
 }
-<<<<<<< HEAD
 
-
-=======
 .container {
     position: relative;
     text-align: center;
@@ -91,4 +82,4 @@ footer{
     font: 90px;
   }
 }
->>>>>>> 802fa4ef3e9cbfb34a670ec786b4fec6141c3512
+
