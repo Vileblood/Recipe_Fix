@@ -11,14 +11,15 @@ mongoose.connect("mongodb+srv://dthomas1986:r00tuser86@firstcluster.pf6q6.mongod
 const recipesSchema = {
     title: String,
     ingredients: Array,
-    instructions: String
+    instructions: String,
+    picture_link: String
 }
 
 const Recipe = mongoose.model('Recipe', recipesSchema);
 
 app.get('/', (req, res) => {
     Recipe.find({}, function(err, recipes) {
-        res.render('index', {
+        res.render('viewrecipes', {
             recipesList: recipes
         })
     })
