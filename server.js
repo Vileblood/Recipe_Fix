@@ -17,14 +17,18 @@ const recipesSchema = {
 
 const Recipe = mongoose.model('Recipe', recipesSchema);
 
-app.get('/', (req, res) => {
+app.get('/', function(req, res) {
+    res.render('index', {});
+});
+
+app.get('/viewrecipes', function(req, res){
     Recipe.find({}, function(err, recipes) {
         res.render('viewrecipes', {
             recipesList: recipes
         })
     })
-})
+});
 
 app.listen(4000, function() {
     console.log('server is running');
-})
+});
