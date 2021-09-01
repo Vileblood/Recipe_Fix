@@ -1,7 +1,9 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap');
 
 html { 
-    background: url(img/new-background.jpg) no-repeat center center fixed; 
+    background: url(/static/new-background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
