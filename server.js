@@ -7,13 +7,20 @@ const ejs = require('ejs');
 app.set('view engine', 'ejs');
 
 
-mongoose.connect("mongodb+srv://dthomas1986:r00tuser86@firstcluster.pf6q6.mongodb.net/new_recipe_set?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://dthomas1986:r00tuser86@firstcluster.pf6q6.mongodb.net/new_recipe_set?retryWrites=true&w=majority",  (error)=>{
+    if(!error)
+    {
+        console.log("Success");
+    } else {
+        console.log("Error Connecting to Database")
+    }
+});
 
-const recipeSchema = {
-    title: String,
-    ingredients: Array,
-    instructions: String,
-}
+const recipeSchema = new mongoose.Schema({
+   title: String,
+   ingredients: Array,
+   instructions: String
+})
 
 const Recipe = mongoose.model('Recipe', recipeSchema);
 
